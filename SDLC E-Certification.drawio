@@ -184,11 +184,14 @@
         <mxCell id="QV0MePQZohn8qoribHQy-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-73" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="QV0MePQZohn8qoribHQy-58" value="OJT App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="1383" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QV0MePQZohn8qoribHQy-59" value="Quality Hero App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1640" width="120" height="60" as="geometry" />
+          <mxGeometry x="410" y="1730" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QV0MePQZohn8qoribHQy-60" value="Training School" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="1240" width="120" height="60" as="geometry" />
@@ -204,6 +207,9 @@
         </mxCell>
         <mxCell id="QV0MePQZohn8qoribHQy-64" value="OJT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-72" value="Non-Compliane Record" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1660" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
