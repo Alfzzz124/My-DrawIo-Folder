@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
   <diagram name="Page-1" id="vAN0KJlrT1s0Eo0WOsTo">
-    <mxGraphModel dx="1945" dy="2250" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1197" dy="1808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -159,6 +159,51 @@
             <mxPoint x="790" y="740" as="sourcePoint" />
             <mxPoint x="910" y="667" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-65" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-57" target="QV0MePQZohn8qoribHQy-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-71" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-57" target="QV0MePQZohn8qoribHQy-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-57" value="E-Certification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1488" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-66" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-67" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-68" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-69" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QV0MePQZohn8qoribHQy-58" target="QV0MePQZohn8qoribHQy-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-58" value="OJT App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1383" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-59" value="Quality Hero App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-60" value="Training School" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-61" value="Skill Matrix" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1323" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-62" value="COP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-63" value="Certification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1488" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QV0MePQZohn8qoribHQy-64" value="OJT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1570" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
