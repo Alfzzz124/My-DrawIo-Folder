@@ -382,10 +382,19 @@
     </mxGraphModel>
   </diagram>
   <diagram id="FXYLLReCP17rq4ZPiSBc" name="DFD Level 2">
-    <mxGraphModel dx="1765" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1714" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-67" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="611" />
+              <mxPoint x="1700" y="660" />
+              <mxPoint x="1305" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="zmAvErMRMkLO10E_P2b0-1" value="[User] &#xa;  |--(NPP, Password)--&gt; [Login] &#xa;  |                        |--cek--&gt; [OJT_UserList] &#xa;  |                        |--ambil info--&gt; [EMPL]&#xa;  |                        |--set--&gt; [Session]&#xa;  |&lt;------status-----------|&#xa;&#xa;&#xa;  |--(NPP, Nama, Password)--&gt; [Register]&#xa;  |                           |--cek--&gt; [OJT_UserList]&#xa;  |                           |--tambah--&gt; [OJT_UserList]&#xa;  |&lt;------status--------------|&#xa;&#xa;&#xa;  |--(Logout)--&gt; [Logout]&#xa;  |                |--clear--&gt; [Session]&#xa;  |&lt;------status---|&#xa;&#xa;&#xa;  |--(NPP, newPassword, OTP)--&gt; [Change Password]&#xa;  |                             |--cek--&gt; [OJT_UserList]&#xa;  |                             |--update--&gt; [OJT_UserList]&#xa;  |&lt;------status----------------|&#xa;&#xa;&#xa;  |--(request info)--&gt; [GetUserLogin]/[CurrentUser]&#xa;  |                      |--ambil--&gt; [Session]/[LDAP]&#xa;  |&lt;------info-----------|&#xa;&#xa;&#xa;  |--(WinAccount)--&gt; [DynamicLoginQualityHero]&#xa;  |                    |--cek--&gt; [QEP_UserListQualityHero]&#xa;  |                    |--set--&gt; [Session]&#xa;  |&lt;------status-------" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="-425" y="150" width="320" height="510" as="geometry" />
         </mxCell>
@@ -456,7 +465,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mTpBHCVEnkC9rHQ2sfNS-14" value="[User]&#xa;  |---&gt; [Profile &amp; Info OJT] &lt;----&gt; [EMPL], [OJT_Master], [HR_SkillMatrix]&#xa;  |---&gt; [Request OJT] &lt;----&gt; [OJT_Master], [EMPL], [OJT_UserList], [OJT_Curriculum]&#xa;  |---&gt; [Approval OJT] &lt;----&gt; [OJT_Master], [EMPL]&#xa;  |---&gt; [Monitoring &amp; Status Update] &lt;----&gt; [OJT_Master], [EMPL], [OJT_LogIssueOJT]&#xa;  |---&gt; [OJT Record &amp; Progress] &lt;----&gt; [OJT_Record], [OJT_RecordPR], [OJT_RecordPRList]&#xa;  |---&gt; [Assessment &amp; Performance Review] &lt;----&gt; [OJT_Assessment], [OJT_Assessment_Variable]&#xa;  |---&gt; [Reporting Issue OJT] &lt;----&gt; [OJT_LogIssueOJT], [OJT_Master]&#xa;  |---&gt; [COP Request] &lt;----&gt; [OJT_COPRequest], [OJT_Master], [EMPL]&#xa;  |---&gt; [Finish/Cancel/Hold OJT] &lt;----&gt; [OJT_Master], [OJT_COPRequest]&#xa;  |---&gt; [Delete OJT] &lt;----&gt; [OJT_Master], [OJT_Record], [OJT_RecordPR]" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1410" y="20" width="560" height="200" as="geometry" />
+          <mxGeometry x="1430" y="35" width="560" height="200" as="geometry" />
         </mxCell>
         <mxCell id="mTpBHCVEnkC9rHQ2sfNS-15" value="[User]&#xa;  |---&gt; [View Dashboard] &lt;----&gt; [OJT_Master], [EMPL]&#xa;  |---&gt; [Get OJT Statistics] &lt;----&gt; [OJT_Master]&#xa;  |---&gt; [Get All Employee Data] &lt;----&gt; [EMPL]&#xa;  |---&gt; [Download Report] &lt;----&gt; [OJT_Master], [EMPL]&#xa;  |---&gt; [Get OJT Status by Cell] &lt;----&gt; [OJT_Master]&#xa;  |---&gt; [Get Profile Data] &lt;----&gt; [EMPL], [OJT_Master]&#xa;  |---&gt; [Load Global Workforce Data] &lt;----&gt; [OJT_GlobalWorkforceDetails]&#xa;  |---&gt; [CRUD GWF Data] &lt;----&gt; [OJT_GlobalWorkforceDetails]" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="860" y="35" width="420" height="150" as="geometry" />
@@ -501,6 +510,160 @@
             <Array as="points">
               <mxPoint x="1050" y="495" />
               <mxPoint x="940" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-52" target="mTpBHCVEnkC9rHQ2sfNS-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-52" target="mTpBHCVEnkC9rHQ2sfNS-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-52" target="mTpBHCVEnkC9rHQ2sfNS-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-52" target="mTpBHCVEnkC9rHQ2sfNS-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-52" target="mTpBHCVEnkC9rHQ2sfNS-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-52" value="User" style="rounded=1;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="410" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-53" target="mTpBHCVEnkC9rHQ2sfNS-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-53" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="611" />
+              <mxPoint x="1570" y="660" />
+              <mxPoint x="1305" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-53" value="3.2&lt;br&gt;Request OJT" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="571" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1637" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-54" value="3.1&lt;br&gt;Profile &amp;amp; info OJT" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="468" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1637" y="777" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-55" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="714" />
+              <mxPoint x="1570" y="660" />
+              <mxPoint x="1305" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-55" value="3.3&lt;br&gt;Approval OJT" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="674" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-56" target="mTpBHCVEnkC9rHQ2sfNS-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-56" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="780" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-61" target="mTpBHCVEnkC9rHQ2sfNS-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1676.999999999974" y="817" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1860" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;jumpStyle=gap;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-61" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="611" />
+              <mxPoint x="1800" y="660" />
+              <mxPoint x="1305" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-61" value="3.5&lt;br&gt;OJT Record &amp;amp; Performance Rating" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="571" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-63" value="3.9&lt;br&gt;Reporting Issue OJT" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="571" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1519.88" y="651" as="sourcePoint" />
+            <mxPoint x="1519.88" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-65" value="3.7&lt;br&gt;COP &lt;br&gt;Request" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="571" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1677" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1750" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-67" value="3.6&lt;br&gt;Update OJT" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;direction=north;" vertex="1" parent="1">
+          <mxGeometry x="1709" y="571" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-84" target="mTpBHCVEnkC9rHQ2sfNS-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1950" y="930" />
+              <mxPoint x="1950" y="390" />
+              <mxPoint x="1637" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-84" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-84" value="3.4&lt;br&gt;Monitoring" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1597" y="890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-87" target="mTpBHCVEnkC9rHQ2sfNS-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-87" value="3.8&lt;br&gt;Finish OJT &amp;amp; Assessment&lt;br&gt;Update" style="ellipse;whiteSpace=wrap;html=1;flipV=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="680" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-87" target="mTpBHCVEnkC9rHQ2sfNS-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-91" target="mTpBHCVEnkC9rHQ2sfNS-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1305" y="390" />
+              <mxPoint x="1637" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-91" value="Email Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="591" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mTpBHCVEnkC9rHQ2sfNS-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;jumpStyle=arc;" edge="1" parent="1" source="mTpBHCVEnkC9rHQ2sfNS-63" target="mTpBHCVEnkC9rHQ2sfNS-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1597.000000000026" y="817" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1415" y="820" />
             </Array>
           </mxGeometry>
         </mxCell>
